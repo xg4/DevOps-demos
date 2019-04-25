@@ -21,7 +21,7 @@ module.exports = {
     production: {
       user: 'root',
       host: '47.96.108.114',
-      ref: 'origin/nuxt-pm2',
+      ref: 'origin/nuxt-pm2-travis',
       repo: 'git@github.com:xg4/DevOps-demos.git',
       path: '/var/www/production',
       'post-deploy':
