@@ -1,37 +1,8 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        DevOps-demos
-      </h1>
-      <h2 class="subtitle">
-        My marvelous Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
-    </div>
+    <h1><a href="https://github.com/xg4/DevOps-demos/tree/nuxt-pm2-travis">github</a></h1>
   </section>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
 
 <style>
 .container {
