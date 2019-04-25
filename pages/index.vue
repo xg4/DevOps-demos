@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <h1>hello world</h1>
     <h1><a href="https://github.com/xg4/DevOps-demos/tree/nuxt-pm2-travis">github</a></h1>
   </section>
 </template>
@@ -9,6 +10,7 @@
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
