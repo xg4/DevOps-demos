@@ -1,0 +1,27 @@
+{
+  "name": "DevOps-demos",
+  "version": "1.0.0",
+  "description": "nodejs travis-ci demo",
+  "keywords": [
+    "demo",
+    "nodejs",
+    "travis-ci"
+  ],
+  "homepage": "https://github.com/xg4/DevOps-demos#readme",
+  "bugs": {
+    "url": "https://github.com/xg4/DevOps-demos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xg4/DevOps-demos.git"
+  },
+  "license": "MIT",
+  "author": "xg4 <xingor4@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
