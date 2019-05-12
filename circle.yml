@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest
+    branches:
+      ignore:
+        - gh-pages
+        - /release\/.*/
+    steps:
+      - checkout
+      - restore_cache:
+          key:
+            - v1-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-cache-{{ .Branch }}-
+            - v1-cache-
+      - run:
+          name: install
+          command: yarn
+      - save_cache:
+          key: v1-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - run:
+          name: test
+          command: yarn test
