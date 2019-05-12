@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
   build:
     docker:
@@ -10,15 +11,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key:
-            - v1-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
-            - v1-cache-{{ .Branch }}-
-            - v1-cache-
+          key: v1-cache-{{ checksum "yarn.lock" }}
       - run:
           name: install
           command: yarn
       - save_cache:
-          key: v1-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v1-cache-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
       - run:
